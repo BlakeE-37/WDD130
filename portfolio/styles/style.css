@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    margin: 0;
+    background-color: #DFE0E2;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: #DFE0E2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #23B5D3;
+    border: 5px solid #DFE0E2;
+    border-radius: 50px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: #A2AEBB;
+    margin: 20px;
+    box-shadow: 5px 5px 10px #071013;
+}
+
+.portrait {
+    margin: 10px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: auto;
+    height: 200px;
+    box-shadow: 3px 3px 10px #071013;
+}
+
+.pageLinks {
+    padding: 20px;
+    align-self: center;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    column-gap: 15%;
+    font-family: "Kanit";
+}
+
+.pageLinks a {
+    text-align: center;
+    font-size: 130%;
+    text-decoration: underline;
+    color: #071013;
+    transition: .3s;
+}
+
+.pageLinks a:hover {
+    scale: 1.2;
+}
+
+.title {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 0 0 20px;
+    font-family: "Kanit";
+    font-size: 250%;
+}
+
+.social {
+    grid-column: 2/3;
+    justify-content: right;
+    display: flex;
+    column-gap: 10px;
+    font-family: "Kanit";
+}
+
+.socialLink {
+    margin: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: auto;
+    transition: .3s
+}
+
+.socialLink:hover {
+    scale: 1.2;
+}
