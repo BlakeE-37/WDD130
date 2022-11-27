@@ -3,18 +3,19 @@
 
 body {
     margin: 0;
-    background-color: #DFE0E2;
+    background-color: #071013;
 }
 
 ::-webkit-scrollbar {
     width: 20px;
-    background-color: #DFE0E2;
+    background-color: #071013;
+    margin: 10px;
+    box-shadow: #23B5D3;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #23B5D3;
-    border: 5px solid #DFE0E2;
-    border-radius: 50px;
+    border-right: 10px solid #071013;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
     grid-template-columns: 1fr 5fr;
     background-color: #A2AEBB;
     margin: 20px;
-    box-shadow: 5px 5px 10px #071013;
+    box-shadow: 5px 5px 10px #23B5D3;
 }
 
 .portrait {
@@ -31,7 +32,6 @@ header {
     grid-row: 1/4;
     width: auto;
     height: 200px;
-    box-shadow: 3px 3px 10px #071013;
 }
 
 .pageLinks {
@@ -65,6 +65,7 @@ header {
 }
 
 .social {
+    height: 60px;
     grid-column: 2/3;
     justify-content: right;
     display: flex;
@@ -81,5 +82,104 @@ header {
 }
 
 .socialLink:hover {
+    scale: 1.2;
+}
+
+main {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 3fr 1fr;
+    margin: 0 20px;
+}
+
+.textImg {
+    float: right;
+    width: auto;
+    height: 240px;
+    margin: 10px;
+}
+
+.mainText {
+    background-color: #A2AEBB;
+    box-shadow: 5px 5px 10px #23B5D3;
+    width: 100%;
+}
+
+.mainText h2,
+.secondMain h2 {
+    font-family: "kanit";
+    margin: 10px;
+}
+
+.mainText p {
+    font-family: "Quicksand";
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.mainText a {
+    font-family: "Quicksand";
+    text-decoration-line: underline;
+    text-decoration-color: #23B5D3;
+    color: #071013;
+}
+
+.mainText a:hover {
+    text-shadow: #23B5D3 1px 0 10px;
+}
+
+.secondMain {
+    background-color: #A2AEBB;
+    box-shadow: 5px 5px 10px #23B5D3;
+    box-sizing: border-box;
+}
+
+.resumeGrid {
+    display: grid;
+    grid-template-columns: 305px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.resume {
+    display: block;
+    height: 390px;
+    margin: 0 auto;
+}
+
+.resumeLink {
+    font-family: "Kanit";
+    margin-top: 10px;
+    text-decoration: underline;
+    color: #071013;
+    transition: .3s;
+    text-align: right;
+    transform-origin: right;
+}
+
+.secondMain a:hover {
+    scale: 1.1;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: #A2AEBB;
+    margin: 20px;
+    box-shadow: 5px 5px 10px #23B5D3;
+}
+
+.siteplanLink {
+    font-family: "Kanit";
+    text-align: left;
+    font-size: 130%;
+    text-decoration: underline;
+    color: #071013;
+    transition: .3s;
+    padding: 13px 10px;
+    transform-origin: left;
+}
+
+.siteplanLink:hover {
     scale: 1.2;
 }
