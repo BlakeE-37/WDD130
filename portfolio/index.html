@@ -51,7 +51,7 @@
                         href="./projects.html">Projects Page</a>
                 </p>
                 <h2>My IT Experience</h2>
-                <img class="textImg" src="./images/nespon-building.jpg" alt="Nespon Building">
+                <img class="textImg" id="myImg" src="./images/nespon-building.jpg" alt="Nespon Building">
                 <p>
                     Over the summer of 2022, I was hired for an internship with the company, Nespon Solutions.
                     This
@@ -81,8 +81,8 @@
             <div class="secondMain">
                 <h2>My R&egrave;sum&egrave;</h2>
                 <div class="resumeGrid">
-                    <iframe class="resume" src="./images/2022-Updated-Resume.pdf#toolbar=0"></iframe>
-                    <a class="resumeLink" target="_blank" href="./images/2022-Updated-Resume.pdf">View Resume</a>
+                    <img class="resume" id="resumeImg" onclick="growUp()" src="./images/resume.jpg" alt="Resume">
+                    <a class="resumeLink" target="_blank" href="./images/2022-Updated-Resume.pdf">Download Resume</a>
                 </div>
             </div>
         </main>
@@ -100,7 +100,14 @@
                 </a>
             </nav>
         </footer>
+        <!-- modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" src="">
+            <div id="caption"></div>
+        </div>
     </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
