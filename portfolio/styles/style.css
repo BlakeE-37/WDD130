@@ -3,7 +3,6 @@
 
 body {
     background-color: #071013;
-    overflow: overlay;
     margin: 0;
     background-image: url(../images/Background.jpg);
     -webkit-background-size: cover;
