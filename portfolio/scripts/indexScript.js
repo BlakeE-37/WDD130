@@ -1,6 +1,6 @@
 var modal = document.getElementById("myModal");
 var modalImage = document.getElementById("img01");
-var captionText = document.getElementById("caption");
+var captionText = document.getElementById("caption-index");
 
 // text image modal
 var img = document.getElementById("myImg");
@@ -8,6 +8,7 @@ img.onclick = function () {
     modal.style.display = "block";
     modalImage.src = this.src;
     captionText.innerHTML = this.alt;
+
 }
 
 // resume modal

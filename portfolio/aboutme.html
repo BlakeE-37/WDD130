@@ -22,42 +22,46 @@
             </nav>
             <h1 class="title">About Me</h1>
             <nav class="social">
-                <a href="https://github.com/BlakeE-37">
+                <a target="_blank" href="https://github.com/BlakeE-37">
                     <img class="socialLink" src="./images/GitHub-link.png" alt="GitHub">
                 </a>
-                <a href=https://www.linkedin.com/in/BlakeEvanHollingsworth>
+                <a target="_blank" href=https://www.linkedin.com/in/BlakeEvanHollingsworth>
                     <img class="socialLink" src="./images/Linkedin-link.png" alt="Linkedin">
                 </a>
-                <a href="https://www.instagram.com/blake.e717/">
+                <a target="_blank" href="https://www.instagram.com/blake.e717/">
                     <img class="socialLink" src="./images/Instagram-link.png" alt="Instagram">
                 </a>
             </nav>
         </header>
         <main>
             <div class="mainText">
-                <h3>Introduction</h3>
+                <h2>Introduction</h2>
                 <p>
                     My name is Blake Hollingsworth, and I am a computer programmer. I have a beautiful fiancé that I
                     love very much, and will be married to on January 14th 2023. I attend BYU-Idaho, studying for a
-                    computer science degree, and my estimated year for graduation is 2024. Some of my hobbies include
+                    computer science degree, and my estimated year for graduation is 2024.<br><br>Some of my hobbies
+                    include
                     fishing, longboarding, rock climbing, playing video games and board games, and of course, anything
                     that deals with computers. I am a big problem solver, and I love to learn new things. If I see a
                     problem that I am unsure of how to fix, I can guarantee I will be doing research, until I can
                     identify and fix the problem. This part of my personality has proven to help a lot with my search
-                    for computer programming and computer hardware knowledge. Above all, it is my goal in life to be as
+                    for computer programming and computer hardware knowledge.<br><br>Above all, it is my goal in life to
+                    be as
                     flexible as possible by being able to tackle any problem that comes my way. This includes learning
                     things like cooking and woodworking, but also more computer related topics such as, building
                     circuits, soldering, understanding networking, different operating systems and more computer
                     programming languages.
                 </p>
-                <h3>Background</h3>
+                <h2>Background</h2>
+                <img class="textImg" src="" alt="">
                 <p>
                     I have always had a love for technology, whether it be playing video games, surfing the internet or
-                    just looking through the possible settings of my computer or cell phone. Growing up I was always so
+                    just looking through the possible settings of my computer or cell phone. Growing up I was always
                     curious about how computers worked and how to fix them when they weren&#x27;t working. Since going
                     to
-                    college, I have been able to dive deeper into these curiosities and learn a lot about computers. I
-                    have been taking many programming classes that have shown me that this career path is right for me.
+                    college, I have been able to dive deeper into these curiosities and learn a lot about computers. As
+                    I learn more about these subjects I realize more and more how much I enjoy it and that this is what
+                    I want to do as a career.<br><br>
                     Going along with that idea, I am also very interested in Design. This stems from the experiences I
                     had in high school. For all four years of high school, I took Yearbook class. The web design and
                     graphic design aspects of yearbook creation are what caught my attention. Combining my two interests
@@ -69,22 +73,117 @@
                     been familiarizing myself with virtual machines, Linux commands and the Linux OS.
                 </p>
             </div>
+            <div class="aboutSecondMain">
+                <div class="secondMainFlex">
+                    <img src="./images/about-page-images/mocktail-shaker.jpg" alt="My wife and I making Mocktails"
+                        onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <img src="./images/about-page-images/fish.JPG" alt="My first ocean fish"
+                        onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    <img src="./images/about-page-images/teton-mountain.jpg"
+                        alt="My wife and I in front of the Teton Mountain Range" onclick="openModal();currentSlide(5)"
+                        class="hover-shadow">
+                    <img src="./images/about-page-images/engagement-1.JPG" alt="Engagement photo on the bridge"
+                        onclick="openModal();currentSlide(7)" class="hover-shadow">
+                </div>
+                <div class="secondMainFlex">
+                    <img src="./images/about-page-images/aligator.jpg" alt="At an Aligator Farm in Florida"
+                        onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    <img src="./images/about-page-images/pork.jpg"
+                        alt="Holding a pork-butt that I seasoned and cooked myself"
+                        onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    <img src="./images/about-page-images/engagement-2.JPG" alt="Me giving my wife an awkward kiss"
+                        onclick="openModal();currentSlide(6)" class="hover-shadow">
+                    <img src="./images/about-page-images/engagement-3.JPG" alt="My wife and I at the lake."
+                        onclick="openModal();currentSlide(8)" class="hover-shadow">
+                    <p class="clickMe">Click a Photo!</p>
+                </div>
+            </div>
         </main>
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal-about">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content-about">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="./images/about-page-images/mocktail-shaker.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="./images/about-page-images/aligator.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="./images/about-page-images/fish.JPG">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="./images/about-page-images/pork.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="./images/about-page-images/teton-mountain.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="./images/about-page-images/engagement-2.JPG">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="./images/about-page-images/engagement-1.JPG">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="./images/about-page-images/engagement-3.JPG">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="thumbnailContainer">
+                <div class="thumbnailChild">
+                    <img class="demo" src="./images/about-page-images/mocktail-shaker.jpg" onclick="currentSlide(1)"
+                        alt="My wife and I making mocktails">
+                    <img class="demo" src="./images/about-page-images/aligator.jpg" onclick="currentSlide(2)"
+                        alt="Me at an aligator farm in Florida">
+                    <img class="demo" src="./images/about-page-images/fish.JPG" onclick="currentSlide(3)"
+                        alt="The first fish I caught in the ocean">
+                    <img class="demo" src="./images/about-page-images/pork.jpg" onclick="currentSlide(4)"
+                        alt="Me holding pork-butt that I seasoned and cooked myself">
+                    <img class="demo" src="./images/about-page-images/teton-mountain.jpg" onclick="currentSlide(5)"
+                        alt="My wife and I in front of the Teton mountain range">
+                    <img class="demo" src="./images/about-page-images/engagement-2.JPG" onclick="currentSlide(6)"
+                        alt="Me giving my wife a funny kiss">
+                    <img class="demo" src="./images/about-page-images/engagement-1.JPG" onclick="currentSlide(7)"
+                        alt="Engagement Photo of my wife and I">
+                    <img class="demo" src="./images/about-page-images/engagement-3.JPG" onclick="currentSlide(8)"
+                        alt="My wife and I at a local lake">
+                </div>
+            </div>
+        </div>
         <footer>
-            <a class="siteplanLink" href="./site-plan.html">Site Plan</a>
+            <a target="_blank" class="siteplanLink" href="./site-plan.html">Site Plan</a>
             <nav class="social">
-                <a href="https://github.com/BlakeE-37">
+                <a target="_blank" href="https://github.com/BlakeE-37">
                     <img class="socialLink" src="./images/GitHub-link.png" alt="GitHub">
                 </a>
-                <a href="https://www.linkedin.com/in/BlakeEvanHollingsworth">
+                <a target="_blank" href="https://www.linkedin.com/in/BlakeEvanHollingsworth">
                     <img class="socialLink" src="./images/Linkedin-link.png" alt="Linkedin">
                 </a>
-                <a href="https://www.instagram.com/blake.e717/">
+                <a target="_blank" href="https://www.instagram.com/blake.e717/">
                     <img class="socialLink" src="./images/Instagram-link.png" alt="Instagram">
                 </a>
             </nav>
         </footer>
     </div>
+    <script src="./scripts/aboutScript.js"></script>
 </body>
 
 </html>
