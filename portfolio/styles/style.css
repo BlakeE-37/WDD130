@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1920px;
     background-color: #071013;
     margin: 0;
     background-image: url(../images/Background.jpg);
@@ -306,7 +307,7 @@ footer {
     margin-top: 8px;
 }
 
-.secondMainFlex:nth-last-child() {
+.secondMainFlex:nth-last-child(1) {
     margin-bottom: 10px;
 
 }
@@ -454,6 +455,49 @@ footer {
     transform: scale(1.08);
 }
 
+/* ------------------------------------------------------------------------------------------------------- */
+/* Projects Page */
+.projectsParent {
+    display: block;
+}
+
+.projectsMain {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #DFE0E2;
+    box-shadow: 5px 5px 10px #DFE0E2;
+}
+
+.project img {
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px #071013;
+}
+
+.project h3 {
+    font-family: "Kanit";
+    text-align: center;
+}
+
+.project p {
+    font-family: "Quicksand";
+    margin: 10px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -471,11 +515,11 @@ footer {
 
 @keyframes fadeUp {
     0% {
-        background-color: rgba(7, 16, 19, 0)
+        background-color: rgba(7, 16, 19, 0);
     }
 
     100% {
-        background-color: rgba(7, 16, 19, 0.9)
+        background-color: rgba(7, 16, 19, 0.9);
     }
 }
 
@@ -509,9 +553,5 @@ footer {
 }
 
 
-
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
