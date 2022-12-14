@@ -195,14 +195,16 @@ main {
     margin-bottom: 50px;
 }
 
-.mainText a {
+.mainText a,
+.projectLink {
     font-family: "Quicksand";
     text-decoration-line: underline;
     text-decoration-color: #23B5D3;
     color: #071013;
 }
 
-.mainText a:hover {
+.mainText a:hover,
+.projectLink:hover {
     text-shadow: #23B5D3 1px 0 10px;
 }
 
@@ -485,6 +487,11 @@ footer {
     object-fit: cover;
     box-shadow: 3px 3px 10px #071013;
 }
+
+/* .project img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+} */
 
 .project h3 {
     font-family: "Kanit";
